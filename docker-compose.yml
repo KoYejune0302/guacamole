@@ -1,6 +1,7 @@
 services:
   guacamole:
     image: abesnier/guacamole
+    container_name: guacamole
     restart: unless-stopped
     ports:
       - "8241:8080"
