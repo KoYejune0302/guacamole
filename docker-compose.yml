@@ -6,6 +6,12 @@ services:
       - "8241:8080"
     volumes:
       - config:/config
+    networks:
+      - npm
 
 volumes:
   config:
+
+networks:
+  npm:
+    external: true
