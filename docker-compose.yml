@@ -1,0 +1,11 @@
+services:
+  guacamole:
+    image: abesnier/guacamole
+    restart: unless-stopped
+    ports:
+      - "8241:8080"
+    volumes:
+      - config:/config
+
+volumes:
+  config:
